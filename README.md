@@ -1,3 +1,4 @@
+![BubbleWrap](BubbleWrap_logo.png)
 # About
 ## BubbleWrap
 BubbleWrap is a collection of different tools to allow you wrap your GB rom into an executable file (e.g. ".exe"). It is made possible by mooonbit and timbojay.
