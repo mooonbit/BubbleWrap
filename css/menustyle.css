@@ -1,0 +1,21 @@
+* {
+    font-size: 20px;
+}
+body {
+    background: black;
+    color: white;
+}
+div {
+    background: black;
+    color: white;
+    display: block;
+    padding: 5rem 0;
+    border: 1px solid white;
+}
+a {
+    color: white;   
+    width: fit-content;
+    margin: auto;
+    display: block;
+    text-decoration: none;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "bubblewrap",
+  "productName": "BubbleWrap",
+  "author": "mooonbit",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "electron": "electron .",
+    "package": "build"
+  },
+  "license": "ISC",
+  "build": {
+    "appId": "com.mooonbit.BubbleWrap",
+    "files": "!build-assets${/*}"
+  },
+  "devDependencies": {
+    "electron": "^28.2.2",
+    "electron-packager": "^17.1.2"
+  }
+}
