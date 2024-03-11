@@ -23,11 +23,11 @@ Edit the index.js file in the root folder. In line 18 replace "menu.html" with "
 'mainWindow.loadFile("index.html");'.
 
 ## Test & Build
-- NPM needs to be installed
-- On the first time: Open terminal type and run "npm install". Wait until it's finished.
+- NPM needs to be installed (https://nodejs.org/en/download)
+- On the first time: Open terminal in the BubbleWrap folder, type and run "npm install". Wait until it's finished.
 
-- To test your app, open the terminal and type: "npm run electron"
-- To create an executable of your app for Windows, do as follows: Open terminal and type "electron-packager "./" "BubbleWrap" --platform=win32 --arch="x64"". This creates a folder with the ".exe" file.
+- To test your app, open the terminal in root folder, type and run: "npm run electron"
+- To create an executable of your game for Windows, do as follows: Open terminal, type and run in root folder: "electron-packager "./" "BubbleWrap" --platform=win32 --arch="x64"". This creates a folder with the ".exe" file.
 
 # How does BubbleWrap work?
 ## binjgb files generated with GB Studio
