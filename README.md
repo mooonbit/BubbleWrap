@@ -1,14 +1,41 @@
-# Instruction
-## Disclaimer
-This app just uses electron and binjgb. Read the binjgbREADME.md for more info.
+# About
+## BubbleWrap
+BubbleWrap is a collection of different tools to allow you wrap your GB rom into an executable file (e.g. ".exe"). It is made possible by mooonbit and timbojay.
+Why is it called BubbleWrap? Because it was originally made to bring BubbleFrog to steam. BubbleFrog is timbojay's original GB Game (https://timbojay.itch.io/bubblefrog).
 
+See below to learn about the different tools used in this package.
+
+## Why use BubbleWrap instead of building with electron directly?
+Because we found a way to play the sound directly on opening the exe (without clicking the window). 
+This was made possible by the index.js file, which already starts the electron browser with a flag that allows playing sounds without clicking. Also we edited binji's emulator script to start the music directly.
+
+## You need help?
+If you need a feature or you have a bug you can contact mooonbit via instagram mooonbit.studio or write an email: (same as the instagram but add @gmail.com)
+
+# Instruction
 ## Basics
 Put your GB rom into "rom" folder and rename it to "game.gb"
-Edit "menu.html" HTML file if you want to display a custom menu before starting up the game.
+### With title-menu in html
+Edit "menu.html" HTML file to your wishes if you want to display a custom menu before starting up the game.
+### Without title-menu
+Edit the index.js file in the root folder. In line 18 replace "menu.html" with "index.html".
+'mainWindow.loadFile("index.html");'.
 
 ## Test & Build
 - NPM needs to be installed
 - On the first time: Open terminal type and run "npm install". Wait until it's finished.
 
 - To test your open terminal and type: "npm run electron"
-- To create an executable your app open terminal and type "electron-packager "./" "BubbleWrap" --platform=win32 --arch="x64"". The file will be created inside the BubbleWrap folder.
+- To create an executable of your app for windows do as follows: Open terminal and type "electron-packager "./" "BubbleWrap" --platform=win32 --arch="x64"". This creates a folder with the ".exe" file.
+
+# How does BubbleWrap work?
+## binjgb
+Fork of binji's Game Boy emulator built as a WebAssembly module.
+
+It includes changes from [Daid's fork](https://github.com/daid/binjgb) and others to better support GB Studio.
+
+## electron
+Electron packages the html page.
+
+## electron-packager
+Electron-packager is used to build an executable.
