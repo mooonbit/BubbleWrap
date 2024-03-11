@@ -6,6 +6,9 @@ Why is it called BubbleWrap? Because it was originally made to bring BubbleFrog 
 
 See below to learn about the different tools used in this package.
 
+## Redistribute?
+BubbleWrap is free to use and distributing your game is permitted.
+
 ## Why use BubbleWrap instead of building with electron directly?
 Because we found a way to play the sound directly on opening the exe (without clicking the window).
 This was made possible by the index.js file, which already starts the electron browser with a flag that allows playing sounds without clicking. We also edited binji's emulator script to start the music directly.
