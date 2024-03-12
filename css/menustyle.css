@@ -6,16 +6,23 @@ body {
     color: white;
 }
 div {
+    margin-top: 4%;
     background: black;
     color: white;
     display: block;
-    padding: 5rem 0;
     border: 1px solid white;
 }
-a {
+input {    
+    padding: 3rem 0;
     color: white;   
-    width: fit-content;
+    background-color: black;
+    width: 100%;
     margin: auto;
     display: block;
     text-decoration: none;
+}
+.background {
+    background-image: url("wrap_bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
