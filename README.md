@@ -1,10 +1,13 @@
-![BubbleWrap](BubbleWrap_logo.png)
+#Note
+We do not condone nor support using this for illegal ROM files! This was designed to help homebrew devs! 
+
 # About
 ## BubbleWrap
 BubbleWrap is a collection of different tools to allow you wrap your GB rom into an executable file (e.g. ".exe"). It is made possible by mooonbit and timbojay.
 Why is it called BubbleWrap? Because it was originally made to bring BubbleFrog to steam. BubbleFrog is timbojay's original GB Game (https://timbojay.itch.io/bubblefrog).
 
 See below to learn about the different tools used in this package.
+![BubbleWrap](BubbleWrap_logo.webp)
 
 ## Why use BubbleWrap instead of building with electron directly?
 Because we found a way to play the sound directly on opening the exe (without clicking the window).
