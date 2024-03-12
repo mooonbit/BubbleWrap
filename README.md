@@ -1,4 +1,4 @@
-#Note
+# Note
 We do not condone nor support using this for illegal ROM files! This was designed to help homebrew devs! 
 
 # About
