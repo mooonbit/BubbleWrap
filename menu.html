@@ -1,11 +1,22 @@
 <!DOCTYPE html>
+<html>
 <head>
     <link rel="stylesheet" href="css/menustyle.css">
+	<script type="module" src="./js/custom.js" ype="text/javascript">
+	</script>
 </head>
-<body class="background">
-    <div>
-        <form action="index.html">
-            <input type="submit" value="Run Game" />
-        </form>
+<body>
+    <div class="background">
+        <div class="startButton">
+            <form action="index.html">
+                <input type="submit" value="Run Game" />
+                <div class="volume">
+       	            <p>Volume</p>
+	            <input id="volume" name="volume" type="range" min="0" max="1" step="0.1" value="0.5" class="slider">
+	        </div>
+            </form>
+            
+        </div>
     </div>
 </body>
+</html>

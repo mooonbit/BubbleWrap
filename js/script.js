@@ -1,3 +1,12 @@
+/* Handle the BubbleWrap volume */
+const queryString = window.location.search;
+console.log("queryString:" + queryString);
+const urlParams = new URLSearchParams(queryString);
+const volParam = urlParams.get('volume');
+console.log("volParam:" + volParam);
+
+
+
 /*
  * Copyright (C) 2017 Ben Smith
  *
@@ -87,7 +96,7 @@ class VM {
     this.ticks = 0;
     this.extRamUpdated = false;
     this.paused_ = false;
-    this.volume = 0.5;
+    this.volume = volParam ? Number(volParam) : 1;
     this.palIdx = DEFAULT_PALETTE_IDX;
     this.canvas = {
       show: true,

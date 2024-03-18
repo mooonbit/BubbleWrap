@@ -24,8 +24,12 @@ If you need a feature or you have a bug you can contact mooonbit via instagram m
 Put your GB rom into "rom" folder and rename it to "game.gb"
 ### With title-menu in html
 Edit "menu.html" HTML file to your wishes if you want to display a custom menu before starting up the game.
+#### Debug the title-menu
+To debug the App's html you can simply uncomment line 58 in index.js. 
+"mainWindow.webContents.openDevTools()"
+
 ### Without title-menu
-Edit the index.js file in the root folder. In line 18 replace "menu.html" with "index.html".
+Edit the index.js file in the root folder. In line 54 replace "menu.html" with "index.html":
 'mainWindow.loadFile("index.html");'.
 
 ## Test & Build

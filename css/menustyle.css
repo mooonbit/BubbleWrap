@@ -1,18 +1,19 @@
 * {
     font-size: 20px;
+    font-family: sans-serif;
 }
 body {
     background: black;
     color: white;
 }
-div {
+.startbutton {
     margin-top: 4%;
     background: black;
     color: white;
     display: block;
     border: 1px solid white;
 }
-input {    
+input {
     padding: 3rem 0;
     color: white;   
     background-color: black;
@@ -20,9 +21,23 @@ input {
     margin: auto;
     display: block;
     text-decoration: none;
+    opacity: 0.7;
+}
+input:hover {
+  opacity: 1;
+}
+form{
+  margin-bottom: 3rem;
+}
+p {
+  text-align: center;
+}
+.slider {
+  padding: 0;
 }
 .background {
     background-image: url("wrap_bg.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 90vh;
 }
